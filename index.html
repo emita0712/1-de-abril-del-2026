@@ -43,7 +43,7 @@
   <div id="timer"></div>
 <p id="descripcion">
   Este es el inicio de algo grande...
-  El 1 de abril de 2026 cambiará todo.. Aunque... Es una fecha especial para mi.
+  El 1 de abril de 2026 cambiará todo.. Aunque... Es una fecha especial para mi.❤️‍🩹
 </p>
   <div id="link">
     <a href="https://tu-enlace.com" target="_blank">https://www.mediafire.com/file/6eno23nml0x2v5l/VideoQueImpactaraAMillonesDePersonasEn2026.mp4/file</a>
@@ -72,6 +72,17 @@
 
         timerDisplay.textContent = 
           `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        const descripcion = document.getElementById("descripcion");
+
+if (days <= 10) {
+  descripcion.textContent =
+    "⚠️ Faltan menos de 10 días... Falta poco pará que el servidor sea borrado!!";
+  descripcion.style.color = "#ff4444";
+} else {
+  descripcion.textContent =
+    "Este es el inicio de algo grande... El 1 de abril de 2026 cambiará todo... Aunque... Es una fecha especial para mi. ❤️‍🩹";
+  descripcion.style.color = "#ffffff";
+}
       }
     }, 1000);
   </script>
